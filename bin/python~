@@ -1,0 +1,5 @@
+#!/bin/sh
+BASEDIR=/mnt/us/launchpad/python
+export PYTHONHOME=${BASEDIR}
+export LD_LIBRARY_PATH=${BASEDIR}/lib:$LD_LIBRARY_PATH
+exec ${BASEDIR}/launchpad/bin/python2.6 $@
